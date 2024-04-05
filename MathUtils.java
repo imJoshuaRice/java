@@ -4,6 +4,11 @@ public class MathUtils {
         return a + b;
     }
 
+    // Overloaded add method
+    public double add(double a, double b) {
+        return a + b;
+    }
+
     // Method to multiply two integers
     public int multiply(int a, int b) {
         return a * b;
