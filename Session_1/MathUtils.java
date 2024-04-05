@@ -1,3 +1,5 @@
+package Session_1;
+
 public class MathUtils {
     // Method to add two integers
     public int add(int a, int b) {

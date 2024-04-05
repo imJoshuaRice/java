@@ -1,3 +1,5 @@
+package Session_1;
+
 public class MathUtilsMain {
     public static void main(String[] args) {
         MathUtils mathUtils = new MathUtils();
