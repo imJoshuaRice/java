@@ -21,10 +21,10 @@ public class ifelse {
         
         if (N % 2 == 0){
             //even
-            if ((N >= 2) & (N <= 5)){
+            if ((N >= 2) && (N <= 5)){
                 //even in range 2 - 5
                 System.out.println("Not Weird");
-            } else if ((N >= 6) & (N <=20)){
+            } else if ((N >= 6) && (N <=20)){
                 //even in range 6 - 20
                 System.out.println("Weird");
             } else if (N >= 20){
