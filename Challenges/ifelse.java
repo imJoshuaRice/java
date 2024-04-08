@@ -9,6 +9,11 @@ import java.util.*;
 
 public class ifelse {
 
+    private static final int LOWER_BOUND_NOT_WEIRD = 2;
+    private static final int UPPER_BOUND_NOT_WEIRD = 5;
+    private static final int LOWER_BOUND_WEIRD = 6;
+    private static final int UPPER_BOUND_WEIRD = 20;
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int N = scanner.nextInt();
@@ -18,14 +23,14 @@ public class ifelse {
         
         if (N % 2 == 0){
             //even
-            if ((N >= 2) && (N <= 5)){
-                //even in range 2 - 5
+            if ((N >= LOWER_BOUND_NOT_WEIRD) && (N <= UPPER_BOUND_NOT_WEIRD)){
+                //even and within lower to upper NOT weird range
                 System.out.println("Not Weird");
-            } else if ((N >= 6) && (N <=20)){
-                //even in range 6 - 20
+            } else if ((N >= LOWER_BOUND_WEIRD) && (N <= UPPER_BOUND_WEIRD)){
+                //even and within the lower and upper IS wierd range
                 System.out.println("Weird");
-            } else if (N >= 20){
-                //even and greater than 20
+            } else if (N >= UPPER_BOUND_WEIRD){
+                //even and greater than upper bound weird range
                 System.out.println("Not Weird");
             }
         } else {
