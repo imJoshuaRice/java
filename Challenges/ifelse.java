@@ -8,7 +8,7 @@ If N is even and greater than 20, print Not Weird
 import java.util.*;
 import java.util.InputMismatchException;
 
-public class ifelse {
+public class ifelse {// TODO: Re-order conditions - I'm told this improves code efficiency/speed
 
   private static final int LOWER_BOUND_NOT_WEIRD = 2;
   private static final int UPPER_BOUND_NOT_WEIRD = 5;
