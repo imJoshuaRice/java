@@ -1,12 +1,6 @@
 package Challenges;
 
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
 
 class Result {
 
@@ -19,10 +13,14 @@ class Result {
      *  3. INTEGER tax_percent
      */
 
-    public static void solve(double meal_cost, int tip_percent, int tax_percent) {
-    // Write your code here
-
-    }
+     public static void solve(double meal_cost, int tip_percent, int tax_percent) {
+        double tipCost = ((meal_cost * tip_percent) / 100);
+        double taxCost = ((meal_cost * tax_percent) / 100);
+        double totalCost = meal_cost + tipCost + taxCost;
+          System.out.println(Math.round(totalCost));
+      }
+    
+    
 
 }
 
